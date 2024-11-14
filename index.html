@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Customer Support</title>
+    <style>
+      body {
+        font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+          "Helvetica Neue", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f7;
+        text-align: center;
+      }
+
+      /* Navbar */
+      .navbar {
+        background-color: #368727;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      }
+
+      .navbar .logo img {
+        width: 250px;
+      }
+
+      .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar ul li {
+        margin-left: 20px;
+      }
+
+      .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+      }
+
+      .call-button {
+        display: inline-block;
+        background-color: #368727;
+        color: #fff;
+        padding: 5px 30px;
+        font-size: 18px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        margin-bottom: 15px;
+      }
+
+      .call-button:hover {
+        background-color: #4baee7;
+      }
+
+      .content {
+        padding: 40px 20px;
+      }
+
+      .footer {
+        font-size: 14px;
+        color: #888;
+        margin-top: 50px;
+        padding-bottom: 30px;
+      }
+      .support-section {
+        text-align: left;
+        padding: 20px;
+        background-color: #fff;
+        margin: 20px auto;
+        max-width: 800px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .support-section h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        color: #368727;
+      }
+
+      .support-section ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      .support-section ul li {
+        margin-bottom: 10px;
+        font-size: 18px;
+      }
+
+      .support-section ul li a {
+        text-decoration: none;
+        color: #368727;
+        font-weight: bold;
+      }
+      .faq-section {
+        text-align: left;
+        padding: 20px;
+        background-color: #f5f5f7;
+        margin: 20px auto;
+        max-width: 800px;
+      }
+
+      .faq-section h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        color: #368727;
+      }
+
+      .faq-section ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      .faq-section ul li {
+        margin-bottom: 15px;
+        font-size: 18px;
+      }
+
+      .faq-section ul li a {
+        text-decoration: none;
+        color: #2b2b2b;
+        font-weight: bold;
+      }
+    </style>
+    <script>
+      function autoDial() {
+        var phoneNumber = "+1(808) 767-8287";
+        window.location.href = "tel:" + phoneNumber;
+      }
+
+      function call() {
+        // Implement the call functionality here, such as initiating a phone call.
+        console.log("Calling...");
+      }
+    </script>
+  </head>
+
+  <body onload="autoDial()">
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="logo">
+        <img
+          src="fidelity-investment-1-logo-black-and-white.png"
+          alt="Fidelity Logo"
+        />
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <h1>Customer Help Center</h1>
+      <a href="tel:+1-806-559-3155" class="call-button">+1-806-559-3155</a
+      ><br />
+      <h2>Need Immediate Support?</h2>
+      <p>
+        For more information related to any query, get in touch with our
+        representative immediately. We are here to assist you 24/7.
+      </p>
+
+      <a href="tel:+1(808) 767-8287" class="call-button"
+        >Contact Us <br />
+        +1(808) 767-8287</a
+      >
+    </div>
+    <div class="faq-section" id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <ul>
+        <li><a href="#">How do I close an account?</a></li>
+        <li>
+          <a href="#"
+            >Which accounts can I close online through the Virtual Assistant?</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            >How do I change my account name or give my account a nickname?</a
+          >
+        </li>
+        <li><a href="#">Where can I view my account history?</a></li>
+        <li><a href="#">How do I access my workplace accounts?</a></li>
+      </ul>
+    </div>
+    <div class="support-section">
+      <h2>How Can We Help You?</h2>
+      <ul>
+        <li>
+          <strong>FAQs:</strong>
+          <a href="#faq">Check out our Frequently Asked Questions</a>
+        </li>
+        <li>
+          <strong>Email Support:</strong>
+        </li>
+        <li>
+          <strong>Live Chat:</strong>
+          <a href="#livechat">Start a live chat with an agent</a>
+        </li>
+        <li>
+          <strong>Service Hours:</strong> Our customer support is available
+          24/7.
+        </li>
+        <li>
+          <strong>Account Management:</strong> Need help with account access or
+          password recovery? <a href="#account">Manage your account</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
+    <p class="footer">© 2024 Our Support. All rights reserved.</p>
+  </body>
+
+</html>
